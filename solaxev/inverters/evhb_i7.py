@@ -61,7 +61,7 @@ class EVHBI7(Inverter):
             "PV1 power": (19, Units.W),
             "PV2 power": (20, Units.W),
             "PV3 power": (21, Units.W),
-            "Total DC generation": (pack_u16(44, 44), Total(Units.KWH), div10),
+            "Total DC generation": (pack_u16(44, 45), Total(Units.KWH), div10),
             "On-grid total yield": (pack_u16(41, 42), Total(Units.KWH), div10),
             "On-grid daily yield": (43, DailyTotal(Units.KWH), div10),
             "On-grid daily export": (37, DailyTotal(Units.KWH), div10),

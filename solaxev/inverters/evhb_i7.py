@@ -71,6 +71,7 @@ class EVHBI7(Inverter):
             "Battery power": (91, Units.W, to_signed),
             "Battery temperature": (92, Units.C),
             "Battery SoC": (93, Units.PERCENT),
+            "Battery capacity": (99, Units.KWH, div10),
             "Inverter Temperature": (75, Units.C),
             "Grid power": (32, Units.W, to_signed),
             "Total feed-in energy": (pack_u16(33, 34), Total(Units.KWH), div10),

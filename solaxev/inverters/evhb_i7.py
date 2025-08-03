@@ -77,7 +77,7 @@ class EVHBI7(Inverter):
             "Total feed-in energy": (pack_u16(33, 34), Total(Units.KWH), div10),
             "Total consumption": (pack_u16(35, 36), Total(Units.KWH), div10),
             "PV Today": (46, DailyTotal(Units.KWH), div10),
-            "Current consumption": (30, Units.W),
+            "Current consumption": (30, Units.W, to_signed),
             "Current export": (pack_u16(28, 29), Units.W, to_signed32),
             "Current SCH1 consumption": (255, Units.W),
             "Current SCH2 consumption": (261, Units.W),
